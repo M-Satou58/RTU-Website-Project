@@ -10,12 +10,17 @@
 		width: 70px;
 		margin-right: 2rem;
 	}
+
+	.title-container h1{
+	
+	}
 </style>
 <!- NAV BAR -!>
 {% include 'nav-bar.html' %}
 <div class="container m-auto p-3">
-	<img src="{% static 'images/bg/title.png' %}">
-
+	<div class="container m-auto text-center">
+		<h1 class="">Making The Unnatural Natural: Begin Saving For Retirement<br> <strong>TODAY</strong> not Tomorrow	</h1>
+	</div>
 	<div class="container text-center p-2">
 		<h1>Business Trends Seminar 2022</h1>
 		<h1 class="btn-danger">30 APRIL : 09:00AM</h1>
@@ -25,23 +30,36 @@
 		<h1>Sponsored By</h1>
 		<div class="container d-flex justify-content-center">
 			<div class="row">
-				<div class="col-12">
-					<div class="d-flex flex-row bd-highlight mb-3">
-						  <img src="{% static 'images/icons/icon_01.PNG' %}" class="img-fluid rounded-circle shadow">
-						  <img src="{% static 'images/icons/icon_02.PNG' %}" class="img-fluid rounded-circle shadow">
-						  <img src="{% static 'images/icons/icon_03.PNG' %}" class="img-fluid rounded-circle shadow">
-						  <img src="{% static 'images/logo/logo_03.jpg' %}" class="img-fluid rounded-circle shadow">
-						  <img src="{% static 'images/logo/logo_01.png' %}" class="img-fluid rounded-circle shadow">
-						  <img src="{% static 'images/logo/logo_02.png' %}" class="img-fluid rounded-circle shadow">
-					</div>
+				<div class="col-2">
+					<img src="{% static 'images/icons/icon_01.PNG' %}" class="img-fluid rounded-circle shadow">
+				</div>
+				<div class="col-2">
+					<img src="{% static 'images/icons/icon_02.PNG' %}" class="img-fluid rounded-circle shadow">
+				</div>
+				<div class="col-2">
+					<img src="{% static 'images/icons/icon_03.PNG' %}" class="img-fluid rounded-circle shadow">
+				</div>
+				<div class="col-2">
+					<img src="{% static 'images/logo/logo_03.jpg' %}" class="img-fluid rounded-circle shadow">
+				</div>
+				<div class="col-2">
+					<img src="{% static 'images/logo/logo_01.png' %}" class="img-fluid rounded-circle shadow">
+				</div>
+				<div class="col-2">
+					<img src="{% static 'images/logo/logo_02.png' %}" class="img-fluid rounded-circle shadow">
 				</div>
 			</div>
 		</div>
 				
-		</div>
+	</div>
 
 	</div>
 	{% include 'persons.html' %}
+
+	<div class="container-fluid mb-3" style="width:80%;">
+		{% include 'poster.html' %}
+	</div>
+	
 </div>
 
 {% endblock content %}

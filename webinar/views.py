@@ -29,3 +29,7 @@ def shortClipsView(request):
 def teaserView(request):
 	context = {}
 	return render(request, 'teaser.html', context)
+
+def financeRadioView(request):
+	context = {}
+	return render(request, 'finance-radio.html', context)

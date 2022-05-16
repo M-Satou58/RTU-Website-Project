@@ -8,4 +8,5 @@ urlpatterns = [
     path('opening/', views.openingView, name='opening'),
     path('short-clips/', views.shortClipsView, name='short-clips'),
     path('teaser/', views.teaserView, name='teaser'),
+    path('finance-radio/', views.financeRadioView, name='finance-radio'),
 ]
