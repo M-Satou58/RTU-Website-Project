@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}Teaser{% endblock title %}
+{% block content %}
+{% load static %}
+
+<!- NAV BAR -!>
+{% include 'nav-bar.html' %}
+
+<div class="container m-auto m-3 mt-4 text-center">
+	<h1 class="btn-warning rounded" style="color:white;">Teaser</h1>
+	
+	<div class="container shadow m-3 p-3 text-center m-auto" style="width: 700px;">
+		<h2 class="btn-primary rounded">Day Before Webinar</h2>
+		<iframe src="https://drive.google.com/file/d/14Wsi39FhIVJx79V48gHYhKebftG77CAM/preview" width="640" height="480" allow="autoplay"></iframe>
+	</div>
+	
+	<div class="container shadow m-3 p-3 mt-4 text-center m-auto" style="width: 700px;">
+		<h2 class="btn-primary rounded">Main Teaser</h2>
+		<iframe src="https://drive.google.com/file/d/1Y-hZ_yTKrFUe6CzJo5doF8hzo0mmkBzC/preview" width="640" height="480" allow="autoplay"></iframe>
+	</div>
+
+	<div class="container shadow m-3 p-3 mt-4 text-center m-auto" style="width: 700px;">
+		<h2 class="btn-primary rounded">Promotion</h2>
+		<iframe src="https://drive.google.com/file/d/15AJH0E71CUo0fvYtpN4m7nhy3IrNJSR5/preview" width="640" height="480" allow="autoplay"></iframe>
+	</div>
+</div>
+{% endblock content %}

@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% block content%}
+<style type="text/css">
+	body{
+		font-family: Dosis, Poppins;
+	}
+	.title-h1{
+		font-size: 60px;
+		color:#fffb09;
+	}
+
+	.date-h5 {
+		font-family: 20px;
+		color: #096acf;
+	}
+	.time {
+		font-weight: bold;
+		color: #2d306b;
+	}
+
+	.desc {
+		font-weight: bold;
+		color: #096acf;
+	}
+
+	.btn-warning{
+		background-image: #096acf;
+	}
+</style>
+<!- NAV BAR -!>
+{% include 'nav-bar.html' %}
+<div class="container p-3 m-auto text-center">
+	<h1 class="title-h1">WEBINAR PROGRAMME</h1>
+	<h5 class="date-h5">9:00-12:00NN | APRIL 30 | SATURDAY | CBET 804 A</h5>
+</div>
+<div class="table fw-bold m-auto p-3 text-center" style="width:80%;">
+
+	<div class="row">
+		<div class="time col-4 btn-warning">
+			<p class="">9:00AM-10:00AM</p>
+		</div>
+		<div class="desc col">
+			<p>ADMISSION</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="time col-4 btn-primary">
+			<p>10:00AM-10:15AM</p>
+		</div>
+		<div class="desc col">
+			<p>DOXOLOGY, NATIONAL ANTHEM AND RTU HYMN</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class=" time col-4 btn-warning">
+			<p>10:15AM-10:20AM</p>
+		</div>
+		<div class="desc col">
+			<p>INTRODUCTION</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="time col-4 btn-primary">
+			<p>10:20AM-10:25AM</p>
+		</div>
+		<div class="desc col">
+			<p>OPENING REMARKS</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="time col-4 btn-warning">
+			<p>10:25AM-10:35AM</p>
+		</div>
+		<div class="desc col">
+			<p>INTERMISSION</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="time col-4 btn-primary">
+			<p>10:35AM-10:40AM</p>
+		</div>
+		<div class="desc col">
+			<p>INTRODUCTION OF SPEAKER</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="time col-4 btn-warning">
+			<p>10:40AM-11:20AM</p>
+		</div>
+		<div class="desc col">
+			<p>DISCUSSION OF GUEST SPEAKER</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="time col-4 btn-primary">
+			<p>11:20AM-11:35AM</p>
+		</div>
+		<div class="desc col">
+			<p>OPEN FORUM</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="time col-4 btn-warning">
+			<p>11:35AM-11:40AM</p>
+		</div>
+		<div class="desc col">
+			<p>AWARDING OF SPEAKER & PARTICIPANTS</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="time col-4 btn-primary">
+			<p>11:40AM-11:45AM</p>
+		</div>
+		<div class="desc col">
+			<p>PHOTO OPPURTUNITY</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="time col-4 btn-warning">
+			<p>11:45AM-12:00NN</p>
+		</div>
+		<div class="desc col">
+			<p>GAMES</p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="time col-4 btn-primary">
+			<p>12:00NN-12:05PM</p>
+		</div>
+		<div class="desc col">
+			<p>CLOSING REMARKS</p>
+		</div>
+	</div>
+
+</div>
+
+
+{% endblock content %}
