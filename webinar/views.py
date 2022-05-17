@@ -33,3 +33,27 @@ def teaserView(request):
 def financeRadioView(request):
 	context = {}
 	return render(request, 'finance-radio.html', context)
+
+def othersForDocumentationView(request):
+	context = {}
+	return render(request, 'others-for-documentation.html', context)
+
+def photoOpWithMsRonaView(request):
+	context = {}
+	return render(request, 'photo-op-with-ms-rona.html', context)
+
+def photoOpWithParticipantsView(request):
+	context = {}
+	return render(request, 'photo-op-with-participants.html', context)
+
+
+
+def presentationSlidesView(request):
+	context = {}
+	return render(request, 'presentation-slides.html', context)
+
+
+
+def speakerView(request):
+	context = {}
+	return render(request, 'speaker.html', context)

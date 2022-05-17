@@ -3,6 +3,28 @@
 {% block content %}
 {% load static %}
 
+<style type="text/css">
+	.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+</style>
+
+
 <!- NAV BAR -!>
 {% include 'nav-bar.html' %}
 
@@ -13,16 +35,16 @@
 	
 	<div class="container shadow m-3 p-3 text-center m-auto">
 		<h2 class="btn-primary rounded">Day Before Webinar</h2>
-		<div class="embed-responsive embed-responsive-16by9r m-auto">
-  			<iframe class="embed-responsive-item" src="https://drive.google.com/file/d/14Wsi39FhIVJx79V48gHYhKebftG77CAM/preview"></iframe>
+		<div class="video-container m-auto">
+  			<iframe class="responsive-iframe" src="https://drive.google.com/file/d/14Wsi39FhIVJx79V48gHYhKebftG77CAM/preview" allowfullscreen allow="autoplay"></iframe>
 		</div>
 	</div>
 
 	<div class="container shadow m-3 p-3 text-center m-auto">
 		<h2 class="btn-primary rounded">Main Teaser</h2>
 		
-		<div class="embed-responsive embed-responsive-16by9 m-auto">
-  			<iframe src="https://drive.google.com/file/d/1Y-hZ_yTKrFUe6CzJo5doF8hzo0mmkBzC/preview"allow="autoplay"></iframe>
+		<div class="video-container m-auto">
+  			<iframe class="responsive-iframe" src="https://drive.google.com/file/d/1Y-hZ_yTKrFUe6CzJo5doF8hzo0mmkBzC/preview" allowfullscreen allow="autoplay"></iframe>
 		</div>
 	</div>
 
@@ -30,8 +52,8 @@
 		<h2 class="btn-primary rounded">Promotion</h2>
 		
 		
-		<div class="embed-responsive embed-responsive-16by9 m-auto">
-  			<iframe src="https://drive.google.com/file/d/15AJH0E71CUo0fvYtpN4m7nhy3IrNJSR5/preview" allow="autoplay"></iframe>
+		<div class="video-container m-auto">
+  			<iframe class="responsive-iframe" src="https://drive.google.com/file/d/15AJH0E71CUo0fvYtpN4m7nhy3IrNJSR5/preview" allowfullscreen allow="autoplay"></iframe>
 		</div>
 	</div>
 </div>

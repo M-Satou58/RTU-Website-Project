@@ -3,27 +3,46 @@
 {% block content %}
 {% load static %}
 <!- NAV BAR -!>
+<style type="text/css">
+	.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
 {% include 'nav-bar.html' %}
 <div class="container m-auto m-3 mt-4 text-center">
 	<h1 class="btn-warning rounded" style="color:white;">Opening</h1>
 	<div class="container shadow m-3 p-3 text-center m-auto">
 		<h2 class="btn-primary rounded">Lupang Hinirang</h2>
-		<div class="embed-responsive embed-responsive-16by9 m-auto">
-  			<iframe src="https://drive.google.com/file/d/1Kqlx3c3rS-1DSQSpJHz_ZDLsg_Lj8TJ0/preview"allow="autoplay"></iframe>
+		<div class="video-container m-auto">
+  			<iframe class="responsive-iframe" src="https://drive.google.com/file/d/1Kqlx3c3rS-1DSQSpJHz_ZDLsg_Lj8TJ0/preview" allowfullscreen allow="autoplay"></iframe>
 		</div>
 	</div>
 
 	<div class="container shadow m-3 p-3 text-center m-auto">
 		<h2 class="btn-primary rounded" >Opening Prayer</h2>
-		<div class="embed-responsive embed-responsive-16by9 m-auto">
-  			<iframe src="https://drive.google.com/file/d/1GNNogfqg3R2rM1q1LnWiUXXpcqOoWfef/preview"allow="autoplay"></iframe>
+		<div class="video-container m-auto">
+  			<iframe class="responsive-iframe" src="https://drive.google.com/file/d/1GNNogfqg3R2rM1q1LnWiUXXpcqOoWfef/preview" allowfullscreen allow="autoplay"></iframe>
 		</div>
 	</div>
 
 	<div class="container shadow m-3 p-3 text-center m-auto">
 		<h2 class="btn-primary rounded" >RTU March</h2>
-		<div class="embed-responsive embed-responsive-16by9 m-auto">
-  			<iframe src="https://drive.google.com/file/d/1G-8_Z21R9wdj4uqHdhppRgY44MnjpZr9/preview"allow="autoplay"></iframe>
+		<div class="video-container m-auto">
+  			<iframe class="responsive-iframe" src="https://drive.google.com/file/d/1G-8_Z21R9wdj4uqHdhppRgY44MnjpZr9/preview" allowfullscreen allow="autoplay"></iframe>
 		</div>
 	</div>
 </div>

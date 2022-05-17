@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<!- NAV BAR -!>
+{% include 'nav-bar.html' %}
+<div class="container m-auto m-3 mt-4 mb-4 text-center">
+	<h1 class="btn-warning rounded" style="color:white;">Others For Documentation</h1>
+	<div class="container shadow m-3 p-3 text-center m-auto" data-bs-toggle="modal" data-bs-target="#docu-modal-01">
+		<img src="{% static 'images/documentation/others/01.webp' %}" class="img-fluid" alt="...">
+		<!-- Modal -->
+			<div class="modal fade" id="docu-modal-01" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-fullscreen">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        <img src="{% static 'images/documentation/others/01.webp' %}" class="img-fluid" alt="...">
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	</div>
+
+	<div class="container shadow m-3 p-3 text-center m-auto" data-bs-toggle="modal" data-bs-target="#docu-modal-02">
+		<img src="{% static 'images/documentation/others/02.webp' %}" class="img-fluid" alt="...">
+		<!-- Modal -->
+			<div class="modal fade" id="docu-modal-02" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-fullscreen">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        <img src="{% static 'images/documentation/others/02.webp' %}" class="img-fluid" alt="...">
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	</div>
+
+	<div class="container shadow m-3 p-3 text-center m-auto" data-bs-toggle="modal" data-bs-target="#docu-modal-03">
+		<img src="{% static 'images/documentation/others/03.webp' %}" class="img-fluid" alt="...">
+		<!-- Modal -->
+			<div class="modal fade" id="docu-modal-03" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-fullscreen">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        <img src="{% static 'images/documentation/others/03.webp' %}" class="img-fluid" alt="...">
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	</div>
+
+	<div class="container shadow m-3 p-3 text-center m-auto" data-bs-toggle="modal" data-bs-target="#docu-modal-04">
+		<img src="{% static 'images/documentation/others/04.webp' %}" class="img-fluid" alt="...">
+		<!-- Modal -->
+			<div class="modal fade" id="docu-modal-04" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog modal-fullscreen">
+			    <div class="modal-content">
+			      <div class="modal-body">
+			        <img src="{% static 'images/documentation/others/04.webp' %}" class="img-fluid" alt="...">
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	</div>
+
+</div>
+
+{% endblock content%}
+

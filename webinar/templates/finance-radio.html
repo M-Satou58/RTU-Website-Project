@@ -2,13 +2,33 @@
 {% block title %}Business Trends Seminar 2022{% endblock title %}
 {% block content %}
 {% load static %}
+
+<style type="text/css">
+	.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
 <!- NAV BAR -!>
 {% include 'nav-bar.html' %}
 <div class="container m-auto m-3 mt-4 text-center">
 	<h1 class="btn-warning rounded" style="color:white;">Finance Radio</h1>
 	<div class="container shadow m-3 p-3 text-center m-auto">
-		<div class="embed-responsive embed-responsive-16by9 m-auto">
-  			<iframe src="https://drive.google.com/file/d/17Q9CxC4dAuj1IQE6rIVbo6xuUMnIFuPK/preview" allow="autoplay"></iframe>
+		<div class="video-container m-auto">
+  			<iframe class="responsive-iframe" src="https://drive.google.com/file/d/17Q9CxC4dAuj1IQE6rIVbo6xuUMnIFuPK/preview" allowfullscreen allow="autoplay"></iframe>
 		</div>
 	</div>
 </div>
