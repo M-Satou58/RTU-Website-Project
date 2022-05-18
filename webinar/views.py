@@ -57,3 +57,11 @@ def presentationSlidesView(request):
 def speakerView(request):
 	context = {}
 	return render(request, 'speaker.html', context)
+
+def aboutTheSeminarView(request):
+	context = {}
+	return render(request, 'about-the-seminar.html', context)
+
+def narrativeReportView(request):
+	context = {}
+	return render(request, 'narrative-report.html', context)

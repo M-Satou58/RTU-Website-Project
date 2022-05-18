@@ -14,4 +14,6 @@ urlpatterns = [
     path('photo-op-with-participants/', views.photoOpWithParticipantsView, name='photo-op-with-participants'),
     path('presentation-slides/', views.presentationSlidesView, name='presentation-slides'),
     path('speaker/', views.speakerView, name='speaker'),
+    path('about-the-seminar/', views.aboutTheSeminarView, name='about-the-seminar'),
+    path('narrative-report/', views.narrativeReportView, name='narrative-report'),
 ]

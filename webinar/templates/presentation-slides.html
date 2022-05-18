@@ -5,9 +5,9 @@
 <!- NAV BAR -!>
 {% include 'nav-bar.html' %}
 <div class="container m-auto m-3 mt-4 mb-4 text-center">
-	<h1 class="btn-warning rounded" style="color:white;">Presentation Slides</h1>
+	<h1 class="display-4" style="color:white; text-shadow: 1px 1px black;">Presentation Slides</h1>
 	<div class="container shadow m-3 p-3 text-center m-auto">
-    <div id="carouserl-presentation-slide" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div id="carouserl-presentation-slide" class="carousel slide carousel-fade" data-bs-interval="false" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="{% static 'images/documentation/presentation-slides/01.png' %}" class="img-fluid"  alt="...">
